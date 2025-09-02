@@ -27,7 +27,7 @@ function Navbar() {
                         {/* <Link to={"/teste"}>Teste</Link> */}
                         Postagens
                         <Link to="/temas" className="houver:underline">Temas</Link>
-                        Cadastrar tema
+                        <Link to="/cadastrartema" className="houver:underline">Cadastrar tema</Link>
                         Perfil
                         <span onClick={logout} className="houver:underline" style={{ cursor: "pointer" }}>Sair</span>
 
