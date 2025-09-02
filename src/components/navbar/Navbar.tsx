@@ -26,7 +26,7 @@ function Navbar() {
                     <div className='flex gap-4'>
                         {/* <Link to={"/teste"}>Teste</Link> */}
                         Postagens
-                        Temas
+                        <Link to="/temas" className="houver:underline">Temas</Link>
                         Cadastrar tema
                         Perfil
                         <span onClick={logout} className="houver:underline" style={{ cursor: "pointer" }}>Sair</span>

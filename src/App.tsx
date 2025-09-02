@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar'
 import Cadastro from './pages/cadastro/Cadastro'
 import Login from './pages/login/Login'
 import { AuthProvider } from './contexts/AuthContext'
+import ListaTemas from './components/tema/listatemas/ListaTemas'
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
+              <Route path="/temas" element={<ListaTemas />} />
+
             </Routes>
           </div>
           <Footer />
