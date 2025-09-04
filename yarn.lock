@@ -1370,6 +1370,7 @@ __metadata:
     react-dom: "npm:^19.1.1"
     react-router-dom: "npm:^7.8.2"
     react-spinners: "npm:^0.17.0"
+    reactjs-popup: "npm:^2.0.6"
     tailwindcss: "npm:^4.1.12"
     typescript: "npm:~5.8.3"
     typescript-eslint: "npm:^8.39.1"
@@ -3046,6 +3047,16 @@ __metadata:
   version: 19.1.1
   resolution: "react@npm:19.1.1"
   checksum: 10c0/8c9769a2dfd02e603af6445058325e6c8a24b47b185d0e461f66a6454765ddcaecb3f0a90184836c68bb509f3c38248359edbc42f0d07c23eb500a5c30c87b4e
+  languageName: node
+  linkType: hard
+
+"reactjs-popup@npm:^2.0.6":
+  version: 2.0.6
+  resolution: "reactjs-popup@npm:2.0.6"
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: 10c0/3f51ff3872a3a338027717cb8c3d51e25ef314f0c5475f105314acb6ef208f13ddebde8e8a466cf1cdc2919e874dc0b76d23934d5d6a0628492eae109a76f683
   languageName: node
   linkType: hard
 
