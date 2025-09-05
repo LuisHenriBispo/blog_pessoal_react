@@ -4,6 +4,7 @@ import { useEffect, useState, type ChangeEvent, type FormEvent } from 'react'
 import { ClipLoader } from 'react-spinners'
 import type Usuario from '../../models/Usuario'
 import { cadastrarUsuario } from '../../services/Service'
+import { ToastAlerta } from '../../utils/ToastAlerta'
 
 function Cadastro() {
 
@@ -47,12 +48,12 @@ function Cadastro() {
 
             try {
                 await cadastrarUsuario('/usuarios/cadastrar', usuario, setUsuario)
-                alert('Usuario cadastrado com sucesso!')
+                ToastAlerta('Usuario cadastrado com sucesso!', 'sucesso')
             } catch (error) {
-                alert('Erro ao cadastrar o usuario!')
+                ToastAlerta('Erro ao cadastrar o usuario!', 'erro')
             }
         } else {
-            alert('Dados do usuario inconsistentes! verifique as informações doo cadastro.')
+            ToastAlerta('Dados do usuario inconsistentes! verifique as informações doo cadastro.', 'erro')
             setUsuario({ ...usuario, senha: ''})
             setConfirmaSenha('')
         }
