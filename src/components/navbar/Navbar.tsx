@@ -28,7 +28,7 @@ function Navbar() {
                         <Link to="/postagens" className="houver:underline">Postagens</Link>
                         <Link to="/temas" className="houver:underline">Temas</Link>
                         <Link to="/cadastrartema" className="houver:underline">Cadastrar tema</Link>
-                        Perfil
+                        <Link to="/perfil" className="houver:underline">Perfil</Link>
                         <span onClick={logout} className="houver:underline" style={{ cursor: "pointer" }}>Sair</span>
 
                     </div>
