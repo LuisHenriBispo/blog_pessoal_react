@@ -17,6 +17,7 @@ function Navbar() {
         }, 100);
     }
 
+
     let component: ReactNode
 
     if (usuario.token !== "") {
@@ -34,12 +35,26 @@ function Navbar() {
                         <Link to="/cadastrartema" className="houver:underline">Cadastrar tema</Link>
                         <Link to="/perfil" className="houver:underline">Perfil</Link>
                         <span onClick={logout} className="houver:underline" style={{ cursor: "pointer" }}>Sair</span>
-
                     </div>
                 </div>
             </div>
         )
-    }
+    } else {
+    // Usuário não logado
+    component = (
+      <div className="w-full flex justify-center py-4 bg-indigo-900 text-white">
+        <div className="container flex justify-between text-lg">
+          <Link to={"/"}>Blog Pessoal</Link>
+
+          <div className="flex gap-4">
+            <Link to="/login" className="hover:underline">
+              Login
+            </Link>
+          </div>
+        </div>
+      </div>
+    );
+}
 
     return (
         <>
